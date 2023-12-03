@@ -1,10 +1,7 @@
 import requests
 import re
-import os
 
-current_dir = os.getcwd()
-
-t = open(current_dir.replace("az", "1.html"), "r", encoding="utf-8").read()
+t = open("1.html", "r", encoding="utf-8").read()
 
 def find_answer(id):
     url = "https://math-ege.sdamgia.ru/problem?id="+str(id)
